@@ -16,14 +16,22 @@ namespace BloomFilterDirty
         
         public void Add(string item)
         {
-            int primaryHash = item.GetHashCode();
-            int secondaryHash = this._getHashSecondary(item);
-            int h1 = primaryHash % this._hashBits.Count;
-            int h2 = (primaryHash +  secondaryHash) % this._hashBits.Count;
-            int h3 = (primaryHash + (2 * secondaryHash)) % this._hashBits.Count;
-            _hashBits[Math.Abs((int)h1)] = true;
-            _hashBits[Math.Abs((int)h2)] = true;
-            _hashBits[Math.Abs((int)h3)] = true;
+            var value = 0;
+
+            foreach (var t in item)
+            {
+                value += t;
+                value += (value << 10);
+                value ^= (value >> 6);
+            }
+
+            value += (value << 3);
+            value ^= (value >> 11);
+            value += (value << 15);
+
+            _hashBits[Math.Abs((int)(item.GetHashCode() % this._hashBits.Count))] = true;
+            _hashBits[Math.Abs((int)((item.GetHashCode() +  value) % this._hashBits.Count))] = true;
+            _hashBits[Math.Abs((int)((item.GetHashCode() + (2 * value)) % this._hashBits.Count))] = true;
         }
 
         public bool Contains(string item)
