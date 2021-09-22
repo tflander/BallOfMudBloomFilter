@@ -6,12 +6,12 @@ namespace BloomFilterDirty
     public class BallOfMud
     {
         private readonly HashFunction _getHashSecondary;
-        private readonly BitArray _hashBits;
+        public BitArray HashBits { get; set; }
 
         public BallOfMud()
         {
             _getHashSecondary = HashString;
-            _hashBits = new BitArray(2_000_000_000);
+            HashBits = new BitArray(2_000_000_000);
         }
         
         public void Add(string item)
@@ -29,25 +29,26 @@ namespace BloomFilterDirty
             value ^= (value >> 11);
             value += (value << 15);
 
-            _hashBits[Math.Abs((int)(item.GetHashCode() % this._hashBits.Count))] = true;
-            _hashBits[Math.Abs((int)((item.GetHashCode() +  value) % this._hashBits.Count))] = true;
-            _hashBits[Math.Abs((int)((item.GetHashCode() + (2 * value)) % this._hashBits.Count))] = true;
+            HashBits[Math.Abs((int)(item.GetHashCode() % this.HashBits.Count))] = true;
+            HashBits[Math.Abs((int)((item.GetHashCode() +  value) % this.HashBits.Count))] = true;
+            HashBits[Math.Abs((int)((item.GetHashCode() + (2 * value)) % this.HashBits.Count))] = true;
         }
 
         public bool Contains(string item)
         {
             var primaryHash = item.GetHashCode();
             var secondaryHash = _getHashSecondary(item);
-            var h1 = primaryHash % _hashBits.Count;
-            if (!_hashBits[Math.Abs(h1)]) return false;
-            var h2 = (primaryHash +  secondaryHash) % _hashBits.Count;
-            var h3 = (primaryHash + (2 * secondaryHash)) % _hashBits.Count;
-            return _hashBits[Math.Abs(h2)] && _hashBits[Math.Abs((int)h3)];
+            var h1 = primaryHash % HashBits.Count;
+            if (!HashBits[Math.Abs(h1)]) return false;
+            var h2 = (primaryHash +  secondaryHash) % HashBits.Count;
+            var h3 = (primaryHash + (2 * secondaryHash)) % HashBits.Count;
+            return HashBits[Math.Abs(h2)] && HashBits[Math.Abs((int)h3)];
         }
         
         private delegate int HashFunction(string input);        
         
-        private static int HashString(string s)
+        // TODO: made public for testing
+        public static int HashString(string s)
         {
             int hash = 0;
 
