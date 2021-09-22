@@ -39,10 +39,9 @@ namespace BloomFilterDirty
             var primaryHash = item.GetHashCode();
             var secondaryHash = _getHashSecondary(item);
             var h1 = primaryHash % _hashBits.Count;
+            if (!_hashBits[Math.Abs(h1)]) return false;
             var h2 = (primaryHash +  secondaryHash) % _hashBits.Count;
             var h3 = (primaryHash + (2 * secondaryHash)) % _hashBits.Count;
-
-            if (!_hashBits[Math.Abs(h1)]) return false;
             return _hashBits[Math.Abs(h2)] && _hashBits[Math.Abs((int)h3)];
         }
         
