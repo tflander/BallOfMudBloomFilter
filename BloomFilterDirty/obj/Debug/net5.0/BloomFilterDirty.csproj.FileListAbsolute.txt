@@ -1,0 +1,12 @@
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\bin\Debug\net5.0\BloomFilterDirty.deps.json
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\bin\Debug\net5.0\BloomFilterDirty.dll
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\bin\Debug\net5.0\ref\BloomFilterDirty.dll
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\bin\Debug\net5.0\BloomFilterDirty.pdb
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\obj\Debug\net5.0\BloomFilterDirty.csprojAssemblyReference.cache
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\obj\Debug\net5.0\BloomFilterDirty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\obj\Debug\net5.0\BloomFilterDirty.AssemblyInfoInputs.cache
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\obj\Debug\net5.0\BloomFilterDirty.AssemblyInfo.cs
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\obj\Debug\net5.0\BloomFilterDirty.csproj.CoreCompileInputs.cache
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\obj\Debug\net5.0\BloomFilterDirty.dll
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\obj\Debug\net5.0\ref\BloomFilterDirty.dll
+C:\Users\todd.a.flanders\RiderProjects\BloomFilter\BloomFilterDirty\obj\Debug\net5.0\BloomFilterDirty.pdb
