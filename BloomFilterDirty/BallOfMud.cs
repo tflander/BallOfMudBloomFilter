@@ -36,20 +36,17 @@ namespace BloomFilterDirty
 
         public bool Contains(string item)
         {
-            int primaryHash = item.GetHashCode();
-            int secondaryHash = this._getHashSecondary(item);
-            int h1 = primaryHash % this._hashBits.Count;
-            int h2 = (primaryHash +  secondaryHash) % this._hashBits.Count;
-            int h3 = (primaryHash + (2 * secondaryHash)) % this._hashBits.Count;
+            var primaryHash = item.GetHashCode();
+            var secondaryHash = _getHashSecondary(item);
+            var h1 = primaryHash % _hashBits.Count;
+            var h2 = (primaryHash +  secondaryHash) % _hashBits.Count;
+            var h3 = (primaryHash + (2 * secondaryHash)) % _hashBits.Count;
 
-            if (!_hashBits[Math.Abs((int)h1)]) return false;
-            if (!_hashBits[Math.Abs((int)h2)]) return false;
-            if (!_hashBits[Math.Abs((int)h3)]) return false;
-            
-            return true;
+            if (!_hashBits[Math.Abs(h1)]) return false;
+            return _hashBits[Math.Abs(h2)] && _hashBits[Math.Abs((int)h3)];
         }
         
-        public delegate int HashFunction(string input);        
+        private delegate int HashFunction(string input);        
         
         private static int HashString(string s)
         {
