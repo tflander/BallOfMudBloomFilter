@@ -11,7 +11,7 @@ namespace BloomFilterDirty
         public BallOfMud()
         {
             _getHashSecondary = HashString;
-            _hashBits = new BitArray(1000000);
+            _hashBits = new BitArray(2_000_000_000);
         }
         
         public void Add(string item)

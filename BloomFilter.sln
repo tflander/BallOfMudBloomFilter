@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilterDirty", "BloomFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilterDirtyTests", "BloomFilterDirtyTests\BloomFilterDirtyTests.csproj", "{56D20CA6-1230-4235-8FB5-38062A492A43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpamFilter", "SpamFilter\SpamFilter.csproj", "{8F7258CA-7D6F-4D11-A9C8-C4DBC897527C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpamFilterTests", "SpamFilterTests\SpamFilterTests.csproj", "{AE950B7C-81C4-4767-91E7-DE96E84FF35E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{56D20CA6-1230-4235-8FB5-38062A492A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56D20CA6-1230-4235-8FB5-38062A492A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56D20CA6-1230-4235-8FB5-38062A492A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F7258CA-7D6F-4D11-A9C8-C4DBC897527C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F7258CA-7D6F-4D11-A9C8-C4DBC897527C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F7258CA-7D6F-4D11-A9C8-C4DBC897527C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F7258CA-7D6F-4D11-A9C8-C4DBC897527C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE950B7C-81C4-4767-91E7-DE96E84FF35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE950B7C-81C4-4767-91E7-DE96E84FF35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE950B7C-81C4-4767-91E7-DE96E84FF35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE950B7C-81C4-4767-91E7-DE96E84FF35E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
