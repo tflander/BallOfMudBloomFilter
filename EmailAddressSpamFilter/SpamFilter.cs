@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 
-namespace SpamFilter
+namespace EmailAddressSpamFilter
 {
     public class SpamFilter
     {

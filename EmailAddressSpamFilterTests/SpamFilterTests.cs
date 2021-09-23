@@ -1,15 +1,14 @@
-using System;
 using FluentAssertions;
 using Xunit;
 
-namespace SpamFilterTests
+namespace EmailAddressSpamFilterTests
 {
     public class SpamFilterTests
     {
         [Fact]
         public void VerifySpamEmailAddresses()
         {
-            var sf = new SpamFilter.SpamFilter();
+            var sf = new EmailAddressSpamFilter.SpamFilter();
             sf.LoadSpamEmailAddresses("Spam.txt");
             
             sf.IsSpam("trustme@evilspammer.com").Should().BeTrue();

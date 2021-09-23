@@ -5,6 +5,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=739a557f_002D2990_002D47e7_002Db5d8_002Dd06b2c6ffc5a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BloomFilterCleanTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c4cc9a49_002D4af2_002D4ffe_002Db03f_002Df7a4ccf3a5b8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;BloomFilterDirtyTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/todd.a.flanders/common/workspaces/C#/BallOfMudBloomFilter/BloomFilterDirtyTests" Presentation="&amp;lt;BloomFilterDirtyTests&amp;gt;" /&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c4cc9a49_002D4af2_002D4ffe_002Db03f_002Df7a4ccf3a5b8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;BloomFilterDirtyTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
