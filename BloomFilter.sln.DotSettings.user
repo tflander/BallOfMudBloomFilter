@@ -1,5 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6e7b5609_002Df70b_002D4785_002Db046_002D5e3eb0d5e2e4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="BallOfMudTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6e7b5609_002Df70b_002D4785_002Db046_002D5e3eb0d5e2e4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BallOfMudTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=739a557f_002D2990_002D47e7_002Db5d8_002Dd06b2c6ffc5a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BloomFilterCleanTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
@@ -7,4 +7,9 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c4cc9a49_002D4af2_002D4ffe_002Db03f_002Df7a4ccf3a5b8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;BloomFilterDirtyTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Solution /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eba3db7d_002D65b7_002D46d1_002Db38a_002D92c59f0ba24e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SpamFilterTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::AE950B7C-81C4-4767-91E7-DE96E84FF35E::net5.0::EmailAddressSpamFilterTests.SpamFilterTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
