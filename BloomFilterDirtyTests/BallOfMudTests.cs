@@ -88,6 +88,15 @@ namespace BloomFilterDirtyTests
         {
             _sut.HashBits = new BitArray(10_000);
             _sut.Contains(TestData).Should().BeFalse();
+        }
+        
+        [Fact]
+        public void ContainsReturnsFalseWhenEveryBitIsSet()
+        {
+            _sut.HashBits = new BitArray(10_000);
+            _sut.HashBits.SetAll(true);
+            _sut.Contains(TestData).Should().BeTrue();
         }        
+        
     }
 }

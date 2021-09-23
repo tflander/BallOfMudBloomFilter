@@ -38,11 +38,15 @@ namespace BloomFilterDirty
         {
             var primaryHash = item.GetHashCode();
             var secondaryHash = _getHashSecondary(item);
-            var h1 = primaryHash % HashBits.Count;
-            if (!HashBits[Math.Abs(h1)]) return false;
-            var h2 = (primaryHash +  secondaryHash) % HashBits.Count;
-            var h3 = (primaryHash + (2 * secondaryHash)) % HashBits.Count;
-            return HashBits[Math.Abs(h2)] && HashBits[Math.Abs((int)h3)];
+
+            const int numberOfHashesPerItem = 3;
+            for (var i = 0; i < numberOfHashesPerItem; ++i)
+            {
+                var hash = (primaryHash + (i * secondaryHash)) % HashBits.Count;
+                if (!HashBits[Math.Abs(hash)]) return false;
+            }
+
+            return true;
         }
         
         private delegate int HashFunction(string input);        
