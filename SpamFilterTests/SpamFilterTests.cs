@@ -7,7 +7,7 @@ namespace SpamFilterTests
     public class SpamFilterTests
     {
         [Fact]
-        public void Test1()
+        public void VerifySpamEmailAddresses()
         {
             var sf = new SpamFilter.SpamFilter();
             sf.LoadSpamEmailAddresses("Spam.txt");

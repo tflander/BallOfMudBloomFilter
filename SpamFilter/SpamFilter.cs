@@ -1,5 +1,8 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
 
 namespace SpamFilter
 {
@@ -16,12 +19,15 @@ namespace SpamFilter
         
         public void LoadSpamEmailAddresses(string filePath)
         {
-            throw new NotImplementedException();
+            foreach (var emailAddress in (IEnumerable<string>) File.ReadLines(filePath))
+            {
+                Add(emailAddress);
+            }
         }
         
         public bool IsSpam(string emailAddress)
         {
-            throw new NotImplementedException();
+            return Contains(emailAddress);
         }
         
         private void Add(string item)
