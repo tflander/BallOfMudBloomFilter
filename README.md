@@ -1,21 +1,19 @@
-# BallOfMudBloomFilter
+# SpamFilterKata
 
-This is a refactoring kata
+This is a refactoring kata.  The idea is to go beyond the concepts learned in the Gilded Rose kata, and to explore problems you would likely face in 
+the real world.
 
-there are four projects:
-  - BloomFilterDirty
-  - BloomFilterDirtyTests
-  - BloomFilterClean			
-  - BloomFilterCleanTests
+## Background
+We have an EmailAddress spam filter to flag incoming email addresses from known spammers.
 
-We only care about BloomFilterDirty and BloomFilterDirtyTests
-
-The project BloomFilter clean is a possible refactoring solution.  It's actually the original code before making things bad.
+This code is reported as not scaling well.  Over time as the list of spam messages grew, we started seeing legitimate email addresses filtered.  
+We've been asked to take a look at this code and figure out how to make it scale better.
 
 TODO:
 
-1) Run tests and verify they are all green
-2) Clean up BloomFilterDirty
-3) Make the hash algorithms injectable 
+1) Run tests and verify they are all green.
+2) Take a look at the tests.  Note the IsSpam() method is the one that doesn't seem to scale.
+3) Create characterization tests around IsSpam() and make a plan for scaling the method.
 
-TODO:  Todd to provide requirements for step #3
+TODO: provide a markdown file detailing a possible solution.
+
